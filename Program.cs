@@ -19,13 +19,16 @@ namespace TaskJunior2._8
             {
                 userInput = Console.ReadLine();
 
-                if (userInput != password)
+                if (userInput == password)
+                {
+                    Console.WriteLine("\nУрааа!!!, вот ваши самые секретные данные)))");
+                    break;
+                }
+                else
                 {
                     Console.WriteLine("Вы ввели неправельный пароль, попробуйте еще раз!\n");
                 }
             }
-
-            Console.WriteLine("\nУрааа!!!, вот ваши самые секретные данные)))");
         }
     }
 }
